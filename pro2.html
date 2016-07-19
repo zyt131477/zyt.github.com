@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>现代浏览器博物馆</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+        body {
+            padding-top: 50px;
+            padding-bottom: 40px;
+            color: #5a5a5a;
+         
+        }
+
+        /* 轮播广告 */
+
+        .carousel {
+            height: 400px;
+            margin-bottom: 60px;
+        }
+
+        .carousel .item {
+            height: 400px;
+            background-color: #000;
+        }
+
+        .carousel .item img {
+            width: 100%;
+        }
+
+        .carousel-caption {
+            z-index: 10;
+        }
+
+        .carousel-caption p {
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 1.8;
+        }
+
+        /* 简介 */
+
+        .summary {
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .summary .col-md-4 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        /* 特性 */
+
+        .feature-divider {
+            margin: 30px 0 20px 0;
+            font-size: 22px;
+
+        }
+        .font-size{
+         font-size: 18px;
+         margin-top: 20px;
+        }
+
+        .feature {
+            padding: 30px 0;
+        }
+
+        .feature-heading {
+            font-size: 50px;
+            color: #2a6496;
+        }
+
+        .feature-heading .text-muted {
+            font-size: 28px;
+        }
+
+        /* 响应式布局 */
+
+        @media (max-width: 768px) {
+
+            .summary {
+                padding-right: 3px;
+                padding-left: 3px;
+            }
+
+            .carousel {
+                height: 300px;
+                margin-bottom: 30px;
+            }
+
+            .carousel .item {
+                height: 300px;
+            }
+
+            .carousel img {
+                min-height: 300px;
+            }
+
+            .carousel-caption p {
+                font-size: 16px;
+                line-height: 1.4;
+            }
+
+            .feature-heading {
+                font-size: 34px;
+            }
+
+            .feature-heading .text-muted {
+                font-size: 22px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .feature-heading {
+                margin-top: 120px;
+            }
+        }
+        .light-blue{
+            background-color: #d8dfe3;
+        }
+        .blue{
+            background-color: #7ca9d8;
+        }
+        .margin{
+            margin: 20px 0 ;
+        }
+        .font-setting{
+            font-size: 24px;
+            color: #666666;
+        }
+        .margin-top-bottom{
+            margin-top: 45px;
+            margin-bottom:70px; 
+        }
+        .margin-img{
+            margin: 30px 0px;
+        }
+        .background-color{
+            background-color:#35383b;
+        }
+        .back-color{
+            background-color: #F2F2F2;
+            margin-top: 20px;
+        }
+        .bottom-font{
+            font-size: 20px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- 顶部导航 -->
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation" id="menu-nav">
+        <div class="container">
+            <div class="navbar-header">
+                <img src="img/logo.png" width="260px">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            产品
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>
+                                <a href="#feature-tab" data-tab="tab-chrome">Chrome</a>
+                            </li>
+                            <li>
+                                <a href="#feature-tab" data-tab="tab-firefox">Firefox</a>
+                            </li>
+                            <li>
+                                <a href="#feature-tab" data-tab="tab-safari">Safari</a>
+                            </li>
+                            <li>
+                                <a href="#feature-tab" data-tab="tab-opera">Opera</a>
+                            </li>
+                            <li>
+                                <a href="#feature-tab" data-tab="tab-ie">IE</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" data-toggle="modal" data-target="#about-modal">关于</a>
+                    </li>
+                    <li>
+                        <a href="#" onClick="javascript:history.back(-1)">返回上一页</a>
+                    </li> 
+                      <li>
+                        <a href="">
+                        <input type="text" maxlength="15"  placeholder="请输入查找内容"  />
+                        <img src="img/icon_search_h.png" height="20px" width="30px"></a>
+                    </li>    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="col-md-12 text-center">
+            <h2>KAIris168综合特征生物识别仪</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 col-xs-0"></div>
+            <div class="col-sm-4 col-xs-12 light-blue text-center">
+                <img src="img/产品.png" class="margin-img"></div>
+            <div class="col-sm-4 col-xs-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2 text-center"></div>
+        <div class="col-md-8 text-center font-setting margin-img">
+
+           <ul class="nav nav-tabs" role="tablist" >
+                    <li class="active">
+                        <a href="#home" role="tab" data-toggle="tab">
+                        产品简介</a>
+                    </li>
+                    <li>
+                        <a href="#profile" role="tab" data-toggle="tab">产品参数</a>
+                    </li>
+                </ul>
+                <div class="tab-content font-size">
+                    <div class="tab-pane active" id="home">
+                        <p>
+                KAIris168综合生物特征识别仪是思源科安自主研发的以虹膜识别为主，人脸识别、指纹识别以及静脉识别为辅的综合多生物特征识别产品。本产品可同时实现双眼的虹膜、红外人脸、可见光人脸、指纹、指静脉等生物特征的采集于识别。
+            </p>
+            <div class="col-xs-6 text-center">
+            <li style="list-style: disc;" class="font-size">综合生物特征识别</li>
+        </div>
+        <div class="col-xs-6 text-center">
+            <li style="list-style: disc;"class="font-size">人员信息存储量大</li>
+        </div>
+        <div class="col-xs-6 text-center">
+            <li style="list-style: disc;" class="font-size">借口多兼容性更强</li>
+        </div>
+        <div class="col-xs-6 text-center">
+            <li style="list-style: disc;" class="font-size">按需定制匹配软件</li>
+        </div>
+        
+                    </div>
+                    <div class="tab-pane" id="profile">
+                        <div class="col-xs-6">主屏尺寸： 5.15英寸</div>
+                        <div class="col-xs-6">主屏分辨率： 1920x1080像素</div>
+                        <div class="col-xs-6">电池容量： 3000mAh</div>
+                        <div class="col-xs-6">电池类型： 不可拆卸式电池</div>
+                       
+                    </div>
+                </div>
+
+           
+        </div>
+
+         <div class="col-md-2 text-center"></div>
+        </div>
+    
+    </div>
+</div>
+
+</div>
+
+        
+       
+ 
+ <div class="container-fluid back-color">
+     <div class="row bottom-font text-center">
+         <div class="col-xs-2"></div>
+         <div class="col-xs-4"><a href=""><strong>上一页</strong></a></div>
+         <div class="col-xs-4"><a href=""><strong>下一页</strong></a></div>
+         <div class="col-xs-2"></div>
+     </div>
+ </div>
+
+ <div class="container-fluid text-center background-color">
+     <div class="row bottom-font">
+         <div class="col-xs-3">
+         <a href="http://www.baidu.com">联系我们</a></div>
+         <div class="col-xs-3"><a href="">产品中心</a></div>
+         <div class="col-xs-3"> <a href="#">产品中心</a></div>
+         <div class="col-xs-3"> <a href="#">产品中心</a></div>
+    </div>
+    <hr>
+ </div>
+
+  <footer>
+        <p class="pull-right">
+            <a href="#top">回到顶部</a>
+        </p>
+
+        <p class="pull-left">&copy; 思源科安</p>
+    </footer>
+
+
+</body>
+</html>
